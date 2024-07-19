@@ -1,0 +1,186 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+    font-weight: 200;
+}
+/* var */
+:root{
+    --bg-color:blue;
+    --font-size:1.2rem;
+}
+/* main area  */
+.main {
+
+    height: 100vh;
+  
+}
+/* header  container */
+.header {
+    background-color:#032542;
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    padding: 0px 2%;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    position: sticky;
+    z-index: 10;
+}
+   
+.logo  {
+    background:#032542;
+    color: #fff;
+    font-size: 22px;
+}
+
+.navigation{
+    padding: 5px;
+    width: 60%;
+
+}
+
+.nav-links  {
+    padding: 5px;
+
+    font-size: 22px;
+    color: #fff;
+    list-style: none;
+    position: relative;
+}
+
+.nav-link:hover  {
+    background: linear-gradient(to right, #9d0230 0%, #9d0230 100%);
+    padding: 5px;
+    border-radius: 3px;
+    transition: .9s;
+}
+
+.fa-solid {
+      color: #cb2424;
+}
+
+.nav-links  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop-down{
+
+    border-radius: 5px;
+
+    font-size: 22px;
+    width: 40%;
+    position: absolute;
+    left: 22%;
+    padding: 2px;
+    display: none;
+}
+
+.drop-down  {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    display: none;
+}
+.drop-down li {
+    display: flex;
+}
+#services:hover .drop-down {
+    display: block;
+}
+.icu-dropdown {
+   font-size: 24px;
+    position: absolute;
+    font-family: "poppins";
+    list-style: none;
+    display: none;
+    right: 0;
+    
+  
+    left: 0;
+    border-bottom: 0.5px  solid  black;
+    padding: 5px;
+}
+
+.icu:hover .icu-dropdown{
+    display: block;
+    background: linear-gradient(to right, #9d0230 0%, #9d0230 100%);
+    border-radius: 5px;
+
+}
+
+.banner  {
+    background: linear-gradient(to right, #1b0a0f 0%, #112568 100%);
+    overflow: hidden;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-left{
+    color: #fff;
+    height: 100%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+   
+}
+
+.banner-left h1 {
+    font-size: 5rem;
+    font-weight: bold;
+
+    padding: 0px 10px;
+ 
+}
+.banner-left span {
+    color: linear-gradient(to right, #9d0230 0%, #9d0230 100%);
+}
+.banner-left p {
+    font-size: 4rem;
+}
+
+.book {
+    padding: 10px;
+    font-size: 3rem;
+    background: linear-gradient(to right, #9d0230 0%, #9d0230 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+    
+}
+
+.book:hover {
+    background: linear-gradient(to right, #340b17 0%, #6a0332 100%);
+    transition: .9s;
+
+}
+
+.banner-right {
+   display: flex;
+   justify-content: space-between;
+   position: relative;
+    height: 100px;
+    height: 100%;
+    width: 65%;
+}
+
+.one{
+    position: absolute;
+}
+
+.two{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
